@@ -170,13 +170,6 @@ export default function Header() {
     </div>
       
     </div>
-    <CameraBrands/>
-    <div className="9"></div>
-    <div className="10"></div>
-    <div className="11"></div>
-    <div className="12"></div>
-    <div className="13"></div>
-    <div className="14"></div>
     </div>
   );
 }

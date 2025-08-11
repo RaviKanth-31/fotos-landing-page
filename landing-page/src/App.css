@@ -3,12 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.p1{
-  background-image: url('./images/header-background.jpg') no-repeat center center;
-  background-size: cover;  
-  width: 100%;
-  /* background-color: black; */
-}
+
 /* Update your existing .p2 class in App.css */
 .p2 {
   margin-top: 60px; /* Adjust this value to match your header's height */
