@@ -29,7 +29,7 @@ export default function CameraBrands() {
   };
 
   return (
-    <section className="brands-section">
+    <section id="brands" className="brands-section">
       <h2>All pro Cameras works!</h2>
       <p>Supports 39+ pro cameras built for efficiency and art!</p>
 

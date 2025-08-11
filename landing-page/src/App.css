@@ -1,3 +1,10 @@
+html, body {
+  overflow-x: hidden;
+}
+
+.menu-icon {
+  flex-shrink: 0; /* prevent it from squishing but not overflowing */
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +20,7 @@
 }
 /* Update your existing .p2 class in App.css */
 .p2 {
-  margin-top: 3.75rem; /* 60px */
+  /* margin-top: 3.75rem; 60px */
   padding: 1rem 5%;
 }
 
@@ -210,7 +217,7 @@ body {
 .feature1image {
   width: 30rem;                   /* 480px */
   height: 20rem;                  /* 320px */
-  margin: 1.25rem;                /* 20px */
+  /* margin: 1.25rem;                20px */
 }
 
 /* Responsive behavior */
@@ -220,17 +227,19 @@ body {
     height: 100%;
   }
   .nav {
-    position: absolute;
-    top: 3.75rem;                 /* 60px */
+    position: fixed; /* instead of absolute */
+    top: 3.75rem; /* 60px */
     right: 0;
+    height: 100vh; /* full height for menu */
     background: white;
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
-    width: 200px;
-    box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.15); /* 2px 8px */
+    width: 12.5rem; /* 200px */
+    box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.15);
     transform: translateX(100%);
     transition: transform 0.3s ease;
+    z-index: 999; /* keep above content */
   }
 
   .nav.active {
@@ -241,9 +250,18 @@ body {
   .menu-icon {
     display: flex;
   }
-  .p2 {
-    margin-top: 3.125rem;         /* 50px */
-    /* padding: 20px */
+  .p2leftthree{
+    flex-direction: column;
+  }
+  .p2leftthreetext {
+    margin-left: 0;
+      margin-top: 0.9375rem; /* 15px */
+    width:100%;
+  }
+  .p2right img{
+    width: 15.625rem;
+    height: 15.625rem;
+    margin-top: 0px;
   }
   .text-image-section {
     flex-direction: column;
@@ -251,10 +269,6 @@ body {
   }
   .p2left {
     align-items: center;
-  }
-  .p2rightimage {
-    text-align: center;
-    margin-top: 1.5rem;
   }
   .hiw {
     flex-direction: column;

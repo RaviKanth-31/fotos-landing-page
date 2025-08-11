@@ -2,7 +2,7 @@
     text-align: center;
     padding: 3.75rem 1.25rem; /* 60px 20px */
     background-color: #fff8f6;
-    /* margin: 3.75rem; 60px */
+    margin: 3.75rem;
     gap: 100/16rem;
   }
   
@@ -145,5 +145,10 @@
     word-break: break-word;
     white-space: normal;
     max-width: 100%;
+  }
+  @media (max-width: 768px) {
+    .pricing-section{
+        margin: 0rem;
+    }
   }
   

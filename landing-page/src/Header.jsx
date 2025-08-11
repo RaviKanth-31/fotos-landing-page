@@ -32,10 +32,10 @@ export default function Header() {
       </div>
 
       <nav className={`nav ${menuOpen ? "active" : ""}`}>
-        <a href="#hiw">How it works</a>
-        <a href="#features">Features</a>
-        <a href="#">Supported cameras</a>
-        <a href="#">Pricing</a>
+        <a href="#hiw" onClick={() => setMenuOpen(!menuOpen)}>How it works</a>
+        <a href="#features" onClick={() => setMenuOpen(!menuOpen)}>Features</a>
+        <a href="#brands" onClick={() => setMenuOpen(!menuOpen)}>Supported cameras</a>
+        <a href="#pricing" onClick={() => setMenuOpen(!menuOpen)}>Pricing</a>
         <button className="btn-primary">Download for FREE</button>
       </nav>
 
@@ -53,7 +53,7 @@ export default function Header() {
           </div>
         </div>
         <div className="p2right">
-          <img src={weddingImage} alt="Example" />
+          <img className="p2rightimage" src={weddingImage} alt="Example" />
         </div>
       </div>
     </div>
@@ -78,7 +78,7 @@ export default function Header() {
         <div className="stepextrainfo">256-bit Encryption <br/>  Military-grade</div>
       </div>
     </div>
-    <div className="features">
+    <div id="features" className="features">
       <div className="feature">
         <div className="featurename">I Triple Redundancy</div>
         <div className="featureexplaination">Retaining three different backups with SD card, PC and Cloud. Ensuring 99.9% data redundancy.</div>

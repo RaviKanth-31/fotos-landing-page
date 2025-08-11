@@ -3,7 +3,7 @@ import "./Pricing.css";
 
 export default function Pricing() {
   return (
-    <section className="pricing-section">
+    <section id="pricing" className="pricing-section">
       <h1 className="title">Simple and Honest Pricing!</h1>
       <p className="subtitle">
         7-day free trial. No credit card required

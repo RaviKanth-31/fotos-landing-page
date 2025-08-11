@@ -4,7 +4,7 @@ import logo from "./images/fotos-icon.png"; // replace with your logo path
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
       <div className="footer-top">
 
         <div className="footer-logo">
