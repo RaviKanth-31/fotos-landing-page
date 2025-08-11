@@ -1,0 +1,148 @@
+.pricing-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff8f6;
+    margin: 60px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    color: #9e9e9e;
+    margin-top: 5px;
+  }
+  
+  .pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .pricing-card {
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .dark-card {
+    background: #1e1e1e;
+    color: white;
+  }
+  
+  .light-card {
+    background: white;
+    color: black;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .plan-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .badge {
+    color: linear-gradient( #e61919, #2ad6f2);
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: white;
+  }
+  
+  .price {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .currency {
+    font-size: 1.2rem;
+  }
+  
+  .period {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #b0b0b0;
+    margin-left: 4px;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    text-align: left;
+  }
+  ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+  
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    gap: 8px; /* Space between items */
+  }
+  
+  ul li {
+    display: list-item; /* Default vertical list behavior */
+  }
+  
+  .features li {
+    padding: 6px 0;
+    position: relative;
+  }
+  
+  .features li::before {
+    content: "✓";
+    color: #00b050;
+    margin-right: 8px;
+  }
+  
+  .btn {
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+  }
+  
+  .light-btn {
+    background: white;
+    color: black;
+  }
+  
+  .dark-btn {
+    background: #1e1e1e;
+    color: white;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+    /* Ensure text fits */
+    overflow-wrap: break-word;   /* Break long words */
+    word-wrap: break-word;       /* Older browsers */
+    word-break: break-word;      /* Extra safety */
+    white-space: normal;         /* Allow wrapping */
+    max-width: 100%;             /* Prevent overflow */
+  }
+  

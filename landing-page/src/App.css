@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.p1{
+  background-image: url('./images/header-background.jpg') no-repeat center center;
+  background-size: cover;  
+  width: 100%;
+  /* background-color: black; */
+}
+/* Update your existing .p2 class in App.css */
+.p2 {
+  margin-top: 60px; /* Adjust this value to match your header's height */
+  padding: 1rem 5%;
+}
+
+.p2left{
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.p2leftone{
+  margin: 20px;
+}
+.p2lefttwo{
+  margin: 20px;
+  width: 70%;
+  font-size: 18px;
+}
+.p2leftthree{
+  margin: 20px;
+  display: flex;
+}
+.p2leftthreetext{
+  margin: 15px;
+  width: 50%;
+}
+.p2right{
+  flex: 1;
+  min-width: 200px;
+  text-align: right;
+}
+.text-image-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Add this back to fix overlapping on smaller screens */
+}
+.p2right img {
+  width: 498px;
+  height: 332px;  
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #2D2D2D;
+  background-color: #fffaf6;
+}
+
+.header {
+  /* position: fixed;       
+  top: 0;                
+  left: 0;                */
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.btn-primary {
+  background: #2D2D2D;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  
+}
+.btn-primary:hover {
+  background-color: #374151;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+.logo-icon {
+  height: 38px;
+  width: 167px;
+}
+
+/* Default nav layout */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Hamburger icon - hidden on desktop */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 3px;
+  background: black;
+  border-radius: 2px;
+}
+
+.hiw {
+  display: flex;
+  justify-content: space-between; /* space between items */
+  align-items: stretch;           /* make them equal height */
+  gap: 40px;                       /* consistent spacing */
+  padding: 40px 100px;              /* space around the row */
+}
+
+.step {
+  flex: 1;                         /* equal width for all */
+  /* background: white;               or your preferred background */
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;  
+  display: flex;
+  flex-direction: column;  
+  gap:20px;       
+}
+
+.step img {
+  width: 100%;
+  height: 200px;        /* or whatever height you want */
+  object-fit: cover;    /* crop instead of distort */
+  display: block;
+  border-radius: 8px;   /* optional */
+}
+
+
+.stepimage2{
+  object-position: top;
+}
+.stepextrainfo{
+  display: flex;
+  justify-content: center;
+  bottom: 0%;
+  background-color: #2D2D2D26;
+  border-radius: 10px;
+  align-items: center;
+  padding: 8px;
+}
+
+.features{
+  /* background-color: yellow; */
+  display: flex;
+  padding: 20px 100px; 
+  gap: 10px; 
+}
+
+.feature{
+  margin: 30px;
+  background-color: #FFFFFF;
+  border: black;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
+  /* box-shadow: inset; */
+  gap: 16px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.featurename{
+  margin: 5px;
+  font-size: 18px;
+}
+.feature1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+.feature1left{
+  padding: 20px;
+  font-size: 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.featuredescription{
+  width: 55%;
+}
+.feature1image{
+  width: 480px;
+  height: 320px;
+  margin: 20px;
+}
+/* Responsive behavior */
+@media (max-width: 768px) {
+  /* Hide normal nav */
+  .nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav.active {
+    transform: translateX(0);
+  }
+
+  /* Show hamburger icon */
+  .menu-icon {
+    display: flex;
+  }
+  .p2{
+    margin-top: 50px;
+    /* padding: 20px */
+  }
+  .text-image-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .p2left{
+    align-items: center;
+  }
+  .p2rightimage {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .hiw{
+    flex-direction: column;
+  }
+  .features{
+    flex-direction: column;
+  }
+  .feature1image {
+    display: none;
+  }
+  .feature2image{
+    display: none;
+  }
+}
+
