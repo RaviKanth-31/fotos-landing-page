@@ -22,7 +22,6 @@ export default function Header() {
       <div className="logo">
         <img src={logoIcon} alt="Fotos logo" className="logo-icon" />
       </div>
-
       <div
         className={`menu-icon ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
@@ -33,13 +32,13 @@ export default function Header() {
       </div>
 
       <nav className={`nav ${menuOpen ? "active" : ""}`}>
-        <a href="#">How it works</a>
-        <a href="#">Features</a>
+        <a href="#hiw">How it works</a>
+        <a href="#features">Features</a>
         <a href="#">Supported cameras</a>
         <a href="#">Pricing</a>
         <button className="btn-primary">Download for FREE</button>
       </nav>
-    </div>
+
     </div>
     <div className="p2">
       <div className="text-image-section">
@@ -53,12 +52,13 @@ export default function Header() {
           <p className="p2leftthreetext">100 people like you have purchased this product!</p>
           </div>
         </div>
-        <div class="p2right">
+        <div className="p2right">
           <img src={weddingImage} alt="Example" />
         </div>
       </div>
+    </div>
   </div>
-    <div className="hiw">
+    <div id="hiw" className="hiw">
       <div className="step">
         <div className="stepheader"><h4>1. Connect to Wi-Fi</h4></div>
         <div className="stepexplaination">Connect your camera and laptop to same Wi-Fi</div>

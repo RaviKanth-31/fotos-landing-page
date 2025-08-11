@@ -2,55 +2,57 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
-.main-background {
+.p1 {
   background-image: url('./images/headerbackground.jpg');
   background-size: cover;
   background-position: center center;
   width: 100%;
+  height: 100vh;
 }
 /* Update your existing .p2 class in App.css */
 .p2 {
-  margin-top: 60px; /* Adjust this value to match your header's height */
+  margin-top: 3.75rem; /* 60px */
   padding: 1rem 5%;
 }
 
-.p2left{
+.p2left {
   flex: 1;
   min-width: 300px;
   display: flex;
   flex-direction: column;
 }
-.p2leftone{
-  margin: 20px;
+.p2leftone {
+  margin: 1.25rem; /* 20px */
 }
-.p2lefttwo{
-  margin: 20px;
+.p2lefttwo {
+  margin: 1.25rem; /* 20px */
   width: 70%;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
 }
-.p2leftthree{
-  margin: 20px;
+.p2leftthree {
+  margin: 1.25rem; /* 20px */
   display: flex;
 }
-.p2leftthreetext{
-  margin: 15px;
+.p2leftthreetext {
+  margin: 0.9375rem; /* 15px */
   width: 50%;
 }
-.p2right{
+.p2right {
   flex: 1;
   min-width: 200px;
   text-align: right;
 }
-.text-image-section{
+.text-image-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap; /* Add this back to fix overlapping on smaller screens */
 }
 .p2right img {
-  width: 498px;
-  height: 332px;  
+  width: 31.125rem; /* 498px */
+  height: 20.75rem; /* 332px */
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -62,7 +64,7 @@ body {
   /* position: fixed;       
   top: 0;                
   left: 0;                */
-  width: 100%; 
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
@@ -70,7 +72,7 @@ body {
 }
 
 .nav {
-  display: flex;
+  display: none;
   gap: 1rem;
   align-items: center;
 }
@@ -86,8 +88,7 @@ body {
   padding: 0.6rem 1rem;
   border: none;
   cursor: pointer;
-  border-radius: 3px;
-  
+  border-radius: 0.1875rem; /* 3px */
 }
 .btn-primary:hover {
   background-color: #374151;
@@ -97,13 +98,12 @@ body {
   align-items: center;
   gap: 0.4rem;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* 24px */
 }
 
-
 .logo-icon {
-  height: 38px;
-  width: 167px;
+  height: 2.375rem; /* 38px */
+  width: 10.4375rem; /* 167px */
 }
 
 /* Default nav layout */
@@ -118,114 +118,117 @@ body {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  gap: 4px;
+  gap: 0.25rem; /* 4px */
 }
 
 .menu-icon div {
-  width: 25px;
-  height: 3px;
+  width: 1.5625rem; /* 25px */
+  height: 0.1875rem; /* 3px */
   background: black;
-  border-radius: 2px;
+  border-radius: 0.125rem; /* 2px */
 }
 
 .hiw {
   display: flex;
   justify-content: space-between; /* space between items */
   align-items: stretch;           /* make them equal height */
-  gap: 40px;                       /* consistent spacing */
-  padding: 40px 100px;              /* space around the row */
+  gap: 2.5rem;                   /* 40px */
+  padding: 2.5rem 6.25rem;        /* 40px 100px */
 }
 
 .step {
   flex: 1;                         /* equal width for all */
   /* background: white;               or your preferred background */
-  padding: 20px;
+  padding: 1.25rem;                /* 20px */
   box-sizing: border-box;
-  border-radius: 8px;  
+  border-radius: 0.5rem;           /* 8px */
   display: flex;
-  flex-direction: column;  
-  gap:20px;       
+  flex-direction: column;
+  gap: 1.25rem;                   /* 20px */
 }
 
 .step img {
   width: 100%;
-  height: 200px;        /* or whatever height you want */
-  object-fit: cover;    /* crop instead of distort */
+  height: 12.5rem;                /* 200px */
+  object-fit: cover;              /* crop instead of distort */
   display: block;
-  border-radius: 8px;   /* optional */
+  border-radius: 0.5rem;          /* 8px */
 }
 
-
-.stepimage2{
+.stepimage2 {
   object-position: top;
 }
-.stepextrainfo{
+.stepextrainfo {
   display: flex;
   justify-content: center;
   bottom: 0%;
   background-color: #2D2D2D26;
-  border-radius: 10px;
+  border-radius: 0.625rem;        /* 10px */
   align-items: center;
-  padding: 8px;
+  padding: 0.5rem;                /* 8px */
 }
 
-.features{
+.features {
   /* background-color: yellow; */
   display: flex;
-  padding: 20px 100px; 
-  gap: 10px; 
+  padding: 1.25rem 6.25rem;       /* 20px 100px */
+  gap: 0.625rem;                  /* 10px */
 }
 
-.feature{
-  margin: 30px;
+.feature {
+  margin: 1.875rem;               /* 30px */
   background-color: #FFFFFF;
   border: black;
   border-style: solid;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 0.625rem;        /* 10px */
+  padding: 0.625rem;              /* 10px */
   /* box-shadow: inset; */
-  gap: 16px;
+  gap: 1rem;                     /* 16px */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.featurename{
-  margin: 5px;
-  font-size: 18px;
+.featurename {
+  margin: 0.3125rem;              /* 5px */
+  font-size: 1.125rem;            /* 18px */
 }
-.feature1{
+.feature1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 100px;
+  padding: 1.25rem 6.25rem;       /* 20px 100px */
 }
-.feature1left{
-  padding: 20px;
-  font-size: 10px;
+.feature1left {
+  padding: 1.25rem;               /* 20px */
+  font-size: 0.625rem;            /* 10px */
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;                  /* 20px */
   flex-direction: column;
 }
-.featuredescription{
+.featuredescription {
   width: 55%;
 }
-.feature1image{
-  width: 480px;
-  height: 320px;
-  margin: 20px;
+.feature1image {
+  width: 30rem;                   /* 480px */
+  height: 20rem;                  /* 320px */
+  margin: 1.25rem;                /* 20px */
 }
+
 /* Responsive behavior */
 @media (max-width: 768px) {
   /* Hide normal nav */
+  .p1{
+    height: 100%;
+  }
   .nav {
     position: absolute;
-    top: 60px;
+    top: 3.75rem;                 /* 60px */
     right: 0;
     background: white;
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
     width: 200px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.15); /* 2px 8px */
     transform: translateX(100%);
     transition: transform 0.3s ease;
   }
@@ -238,32 +241,36 @@ body {
   .menu-icon {
     display: flex;
   }
-  .p2{
-    margin-top: 50px;
+  .p2 {
+    margin-top: 3.125rem;         /* 50px */
     /* padding: 20px */
   }
   .text-image-section {
     flex-direction: column;
     text-align: center;
   }
-  .p2left{
+  .p2left {
     align-items: center;
   }
   .p2rightimage {
     text-align: center;
     margin-top: 1.5rem;
   }
-  .hiw{
+  .hiw {
     flex-direction: column;
   }
-  .features{
+  .features {
     flex-direction: column;
   }
   .feature1image {
     display: none;
   }
-  .feature2image{
+  .feature2image {
     display: none;
   }
-}
 
+  /* Increase font size on mobile for readability */
+  .feature1left {
+    font-size: 0.875rem;          /* 14px */
+  }
+}
