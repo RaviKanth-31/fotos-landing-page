@@ -16,14 +16,13 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-      <div className="p1">
+      <div>
+        <div className="p1" >
     <div className="header">
-      {/* Logo */}
       <div className="logo">
         <img src={logoIcon} alt="Fotos logo" className="logo-icon" />
       </div>
 
-      {/* Hamburger icon */}
       <div
         className={`menu-icon ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
@@ -33,7 +32,6 @@ export default function Header() {
         <div></div>
       </div>
 
-      {/* Navigation */}
       <nav className={`nav ${menuOpen ? "active" : ""}`}>
         <a href="#">How it works</a>
         <a href="#">Features</a>
@@ -42,7 +40,8 @@ export default function Header() {
         <button className="btn-primary">Download for FREE</button>
       </nav>
     </div>
-    <section className="p2">
+    </div>
+    <div className="p2">
       <div className="text-image-section">
         <div className="p2left">
           <div className="p2leftone"><h1>Speed and safety for your creativity!</h1></div>
@@ -58,7 +57,7 @@ export default function Header() {
           <img src={weddingImage} alt="Example" />
         </div>
       </div>
-  </section>
+  </div>
     <div className="hiw">
       <div className="step">
         <div className="stepheader"><h4>1. Connect to Wi-Fi</h4></div>

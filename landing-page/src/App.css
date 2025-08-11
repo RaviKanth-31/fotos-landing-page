@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.main-background {
+  background-image: url('./images/headerbackground.jpg');
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
 /* Update your existing .p2 class in App.css */
 .p2 {
   margin-top: 60px; /* Adjust this value to match your header's height */
