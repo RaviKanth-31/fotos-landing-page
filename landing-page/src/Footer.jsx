@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-top">
 
         <div className="footer-logo">
-          <img src={logo} alt="Fotos Logo" style={{marginLeft: '60px'}}/>
+          <img src={logo} alt="Fotos Logo" style={{marginLeft: '60/16rem'}}/>
         </div>
 
 

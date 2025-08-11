@@ -195,7 +195,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.25rem 6.25rem;       /* 20px 100px */
+  padding: 1.25rem 1.25rem;       /* 20px 100px */
 }
 .feature1left {
   padding: 1.25rem;               /* 20px */
@@ -261,6 +261,9 @@ body {
   }
   .features {
     flex-direction: column;
+  }
+  .feature1text{
+    font-size: 10/16rem;
   }
   .feature1image {
     display: none;
